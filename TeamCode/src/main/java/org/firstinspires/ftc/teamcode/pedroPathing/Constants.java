@@ -28,12 +28,12 @@ public class Constants {
             //
             //increase D until it's nice and smooth, with no overshoot.
 
-            .secondaryHeadingPIDFCoefficients(new PIDFCoefficients(0.65, 0, 0, 0.015))
-            .drivePIDFCoefficients(new FilteredPIDFCoefficients(0.25, 0, 0, 0, 0.022))
+            //.secondaryHeadingPIDFCoefficients(new PIDFCoefficients(0.65, 0, 0, 0.015))
+            .drivePIDFCoefficients(new FilteredPIDFCoefficients(0.2, 0, 0.025, 0, 0.03))
             .useSecondaryHeadingPIDF(true)
             .centripetalScaling(0.0005); // need to test
 
-    public static PathConstraints pathConstraints = new PathConstraints(0.99, 100, 1.35, 1);
+    public static PathConstraints pathConstraints = new PathConstraints(0.99, 100, 2.3, 1);
 
     public static MecanumConstants driveConstants = new MecanumConstants()
             .maxPower(1)
