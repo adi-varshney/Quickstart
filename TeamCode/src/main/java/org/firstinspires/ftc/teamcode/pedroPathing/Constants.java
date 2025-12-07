@@ -20,7 +20,7 @@ public class Constants {
             .forwardZeroPowerAcceleration(-30.499437451291932)
             .lateralZeroPowerAcceleration(-59.74626160865985)
             .translationalPIDFCoefficients(new PIDFCoefficients(0.13, 0, 0.01, 0.01))
-            .headingPIDFCoefficients(new PIDFCoefficients(1.3, 0, 0, 0.02))
+            .headingPIDFCoefficients(new PIDFCoefficients(0.8, 0, 0.25, 0.45))
 
             //increase F until robot starts jittering. your F value will be just below it
             //
