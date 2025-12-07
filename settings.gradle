@@ -3,7 +3,7 @@ include ':TeamCode'
 
 dependencyResolutionManagement {
     repositories {
-        mavenLocal()    // 👈 REQUIRED for using LOCAL Pedro builds
+        mavenLocal()    // REQUIRED for using LOCAL Pedro builds
         google()
         mavenCentral()
         maven { url = "https://jitpack.io" }

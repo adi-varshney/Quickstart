@@ -15,11 +15,16 @@ dependencies {
     implementation 'org.firstinspires.ftc:Vision:11.0.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
 
-    // Use LOCAL versions of Pedro core + ftc
-    implementation 'com.pedropathing:core:LOCAL'
-    implementation 'com.pedropathing:ftc:LOCAL'
+    // For beta testing
+    // implementation 'com.pedropathing:core:LOCAL'
+    // implementation 'com.pedropathing:ftc:LOCAL'
 
-    // telemetry and paneles stuff
+    // For normal use
+    implementation 'com.pedropathing:core:2.0.4'
+    implementation 'com.pedropathing:ftc:2.0.4'
+
+
+    // telemetry and panels stuff
     implementation 'com.pedropathing:telemetry:1.0.0'
     implementation 'com.bylazar:fullpanels:1.0.10'
 }
