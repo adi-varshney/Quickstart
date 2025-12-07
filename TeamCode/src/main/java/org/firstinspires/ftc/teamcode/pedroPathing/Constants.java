@@ -19,8 +19,15 @@ public class Constants {
             .mass(10.25119) // input robot mass
             .forwardZeroPowerAcceleration(-30.499437451291932)
             .lateralZeroPowerAcceleration(-59.74626160865985)
-            .translationalPIDFCoefficients(new PIDFCoefficients(0.045, 0, 0.002, 0.005))
+            .translationalPIDFCoefficients(new PIDFCoefficients(0.13, 0, 0.01, 0.01))
             .headingPIDFCoefficients(new PIDFCoefficients(1.3, 0, 0, 0.02))
+
+            //increase F until robot starts jittering. your F value will be just below it
+            //
+            //increase P until it starts oscillating, your P value will be 60-70% of that
+            //
+            //increase D until it's nice and smooth, with no overshoot.
+
             .secondaryHeadingPIDFCoefficients(new PIDFCoefficients(0.65, 0, 0, 0.015))
             .drivePIDFCoefficients(new FilteredPIDFCoefficients(0.25, 0, 0, 0, 0.022))
             .useSecondaryHeadingPIDF(true)
