@@ -72,5 +72,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issue.number,
-              body: `✅ PR reopened. ⚠️ If this PR is closed again, it cannot be reopened.`
+              body: `PR reopened. If this PR is closed again, it cannot be reopened.`
             });
